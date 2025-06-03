@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.logo-bar {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+}
+
+.facebook-link {
+  display: inline-block;
+}
+
+.facebook-icon {
+  position: relative;
+  top: -50px; /* moves icon up */
+  height: 50px;
+  width: 50px;
+}
+
+.slideshow {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: black;
+  padding: 15px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;       /* space between each contact-item */
+  white-space: nowrap; /* prevent line breaks */
+  z-index: 10;
+  text-align: left;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;        /* space between icon and text */
+  font-size: 14px;
+}
+
+.contact-icon {
+  height: 20px;
+  width: 20px;
+}
